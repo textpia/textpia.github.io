@@ -118,14 +118,14 @@ sam은 정규표현식을 많이 사용하는 명령 언어 (Command Language) �
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <hr>
 <h1 id="introduction">Introduction</h1>
-<p>이 자습서에서는 Blits 및 비트맵 디스플레이가 있는 일부 컴퓨터에서 실행되는 <code>대화형 텍스트 편집기인 sam의 명령 언어(_Command Language_)</code> 에 대해 설명 합니다. 대부분의 편집 작업은 마우스 기반의 편집 기능으로 충분하며 사용법과 학습 또한 매우 쉽습니다.</p>
+<p>이 자습서에서는 Blits 및 비트맵 디스플레이가 있는 일부 컴퓨터에서 실행되는 <code>대화형 텍스트 편집기인 sam의 명령 언어(*Command Language*)</code> 에 대해 설명 합니다. 대부분의 편집 작업은 마우스 기반의 편집 기능으로 충분하며 사용법과 학습 또한 매우 쉽습니다.</p>
 <p>하지만, <code>명령 언어</code> 는 특히<code> 전역적인 변경 작업을 처리할 때</code> 유용한 경우가 많습니다. ed 편집기의 명령 언어와 다르게 sam 편집기의 명령 언어는 복잡하거나 반복적인 편집 작업에 적합합니다.</p>
 <blockquote>
 <p>[!TIP]
 sam과 다른 편집기와의 가장 큰 차이점은 매우 복잡한 편집 작업을 처리할 수 있다는 점입니다.</p></blockquote>
 <p>sam 의 명령 언어는 <code>sed</code> 및 <code>awk</code> 같은 프로그램을 포함해 다른 편집기에서 매끄럽게 처리하지 못하는 일부 작업을 매우 쉽게 처리할 수 있으므로, 이 자습서는 부분적으로 sam 의 텍스트 처리 방식에 대한 교과서 역할을 합니다.</p>
 <p>또한, 아래의 예제는 sam 에서 마우스를 사용하는 경우는 제외하고 전적으로 <code>sam 명령 언어</code> 에 대해서만 설명합니다. 따라서, sam 을 <code>‑d</code> 플래그(옵션)로 실행하면 마우스가 없더라도 (다운로드되지 않음) 사용할 수 있으며,
-본 자습서는 바로 이런 처리 방법을 기준으로 설명합니다. 하지만, ``다운로드된 sam<code>의 처리 방법과 그래픽 환경의</code>다운로드되지 않은 sam의 명령 윈도우에서 사용하는 <code>명령 언어는 완전히 동일</code> 합니다.</p>
+본 자습서는 바로 이런 처리 방법을 기준으로 설명합니다. 하지만, <code>다운로드된 sam</code> 의 처리 방법과 그래픽 환경의 <code>다운로드되지 않은 sam</code> 의 명령 윈도우에서 사용하는 <code>명령 언어는 완전히 동일</code> 합니다.</p>
 <blockquote>
 <p>[!TIP]
 <strong>Unix 숙련자에게 한마디:</strong> <code>sam</code> 은 구문적으로 <code>ed</code> 와 매우 유사하지만, 개발 디자인 측면과 세부적인 의미에선 근본적이고 의도적으로 다릅니다. ed 에 대한 기존의 지식을 활용해 대체 명령의 작동 방식을 예측할 수 있겠지만, 자신이 예측한대로 수행하기 위해선
@@ -135,7 +135,7 @@ sam 의 작업 처리 방식에 대해 어느 정도 이해한 경우에만 정�
 이 두 프로그램간 차이점에 대해 이해하려는 경우에만 이 부분을 읽으시길 바랍니다. 이 자습서는 <code>sam vs ed</code> 가 아니라, <strong>오직 sam에 대한 설명 문서</strong> 입니다.</p>
 <blockquote>
 <p>[!IMPORTANT]
-<strong>명명법:</strong> sam은 <code>편집 파일의 복사본을 보관</code> 합니다. 설명상 혼동을 피하기 위해 이런 파일(_File)_에 대한 sam 내부의 복사본을 <strong>파일</strong> 이라 명명합니다. 또한, 디스크내의 영구 저장소의 실제 파일은 <strong>Unix 파일</strong> 로 명명합니다.</p></blockquote>
+<strong>명명법:</strong> sam은 <code>편집 파일의 복사본을 보관</code> 합니다. 설명상 혼동을 피하기 위해 이런 파일(<em>File</em>)에 대한 sam 내부의 복사본을 <strong>파일</strong> 이라 명명합니다. 또한, 디스크내의 영구 저장소의 실제 파일은 <strong>Unix 파일</strong> 로 명명합니다.</p></blockquote>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h1 id="text">Text</h1>
 <p>우선, 편집 작업을 시작하려면 편집할 텍스트가 필요합니다. 생각할 수 있는 모든 텍스트를 사용할 수 있습니다. 본 문서에선 <em>James Gosling</em> 의 Emacs 설명서로 시작하겠습니다.</p>
