@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PilJin.Kwon&#39;s Private Site</title>
-    <link>https://textpia.github.io/</link>
-    <description>Recent content on PilJin.Kwon&#39;s Private Site</description>
+    <title>Posts on PilJin.Kwon&#39;s Private Site</title>
+    <link>https://textpia.github.io/posts/</link>
+    <description>Recent content in Posts on PilJin.Kwon&#39;s Private Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>©XenoStream.com </copyright>
     <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://textpia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://textpia.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Text Editor sam with Rob Pike</title>
       <link>https://textpia.github.io/posts/sam/</link>
