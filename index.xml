@@ -10,13 +10,6 @@
     <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://textpia.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Skeleton of md files</title>
-      <link>https://textpia.github.io/posts/skel/</link>
-      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://textpia.github.io/posts/skel/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Text Editor sam with Rob Pike</title>
       <link>https://textpia.github.io/posts/sam/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
