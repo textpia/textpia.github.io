@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on PilJin.Kwon&#39;s Private Site</title>
-    <link>https://textpia.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on PilJin.Kwon&#39;s Private Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>©XenoStream.com </copyright>
     <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://textpia.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Text Editor sam with Rob Pike</title>
-      <link>https://textpia.github.io/posts/sam/</link>
+      <link>http://localhost:1313/posts/sam/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://textpia.github.io/posts/sam/</guid>
+      <guid>http://localhost:1313/posts/sam/</guid>
       <description>&lt;h1 id=&#34;a-tutorial-for-the-sam-command-language&#34;&gt;A tutorial for the sam command language&lt;/h1&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&#xA;[&lt;strong&gt;Rob Pike&lt;/strong&gt;]&#xA;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ABSTRACT&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!NOTE]&#xA;sam은 정규표현식을 많이 사용하는 명령 언어 (Command Language) 가 포함된 대화형 텍스트 편집기 입니다. 명령 언어는 문법적으로 ed(1) 와 유사하지만 세부 사항은 흥미롭게 다릅니다. 이 자습서에서는 명령 언어에 대해서 소개하고 화면 및 마우스 인터페이스에 대해서는 별도로 설명하지 않습니다. 9th 버전의 Blit 소프트웨어에 익숙한 사용자에게는 미리 사과 말씀과 함께 mux(9) 에 대한 sam의 유사성으로 인해 sam의 마우스 언어는 사용자가 쉽게 배울 수 있다고 가정하고 설명합니다.&lt;/p&gt;</description>
     </item>
   </channel>
