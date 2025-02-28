@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Text Editor sam with Rob Pike - PilJin.Kwon&#39;s Private Site</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A tutorial for the sam command language
@@ -11,7 +11,7 @@ ABSTRACT
 [!NOTE]
 sam은 정규표현식을 많이 사용하는 명령 언어 (Command Language) 가 포함된 대화형 텍스트 편집기 입니다. 명령 언어는 문법적으로 ed(1) 와 유사하지만 세부 사항은 흥미롭게 다릅니다. 이 자습서에서는 명령 언어에 대해서 소개하고 화면 및 마우스 인터페이스에 대해서는 별도로 설명하지 않습니다. 9th 버전의 Blit 소프트웨어에 익숙한 사용자에게는 미리 사과 말씀과 함께 mux(9) 에 대한 sam의 유사성으로 인해 sam의 마우스 언어는 사용자가 쉽게 배울 수 있다고 가정하고 설명합니다." />
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content="http://localhost:1313/posts/sam/">
+	<meta property="og:url" content="https://textpia.github.io/posts/sam/">
   <meta property="og:site_name" content="PilJin.Kwon&#39;s Private Site">
   <meta property="og:title" content="Text Editor sam with Rob Pike">
   <meta property="og:description" content="A tutorial for the sam command language [Rob Pike] ABSTRACT
@@ -28,13 +28,13 @@ sam은 정규표현식을 많이 사용하는 명령 언어 (Command Language) �
   <meta name="twitter:description" content="A tutorial for the sam command language [Rob Pike] ABSTRACT
 [!NOTE] sam은 정규표현식을 많이 사용하는 명령 언어 (Command Language) 가 포함된 대화형 텍스트 편집기 입니다. 명령 언어는 문법적으로 ed(1) 와 유사하지만 세부 사항은 흥미롭게 다릅니다. 이 자습서에서는 명령 언어에 대해서 소개하고 화면 및 마우스 인터페이스에 대해서는 별도로 설명하지 않습니다. 9th 버전의 Blit 소프트웨어에 익숙한 사용자에게는 미리 사과 말씀과 함께 mux(9) 에 대한 sam의 유사성으로 인해 sam의 마우스 언어는 사용자가 쉽게 배울 수 있다고 가정하고 설명합니다.">
 
-        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+        <link href="https://textpia.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
-		src="http://localhost:1313/js/MathJax.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://textpia.github.io/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://textpia.github.io/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
+		src="https://textpia.github.io/js/MathJax.js"></script>
 		
 		<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -48,9 +48,9 @@ sam은 정규표현식을 많이 사용하는 명령 언어 (Command Language) �
 						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
 			}
 		});
-		</script><link rel="stylesheet" href="http://localhost:1313/katex/katex.min.css ">
-		<script defer src="http://localhost:1313/katex/katex.min.js"></script>
-		<script defer src="http://localhost:1313/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		</script><link rel="stylesheet" href="https://textpia.github.io/katex/katex.min.css ">
+		<script defer src="https://textpia.github.io/katex/katex.min.js"></script>
+		<script defer src="https://textpia.github.io/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 		
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
@@ -66,7 +66,7 @@ sam은 정규표현식을 많이 사용하는 명령 언어 (Command Language) �
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="http://localhost:1313/">PilJin.Kwon&#39;s Private Site</a>
+		<a href="https://textpia.github.io/">PilJin.Kwon&#39;s Private Site</a>
 	</div>
 	<nav>
 		
@@ -730,6 +730,8 @@ sam 의 작업 처리 방식에 대해 어느 정도 이해한 경우에만 정�
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
+
+
 
 </div>
     </body>
